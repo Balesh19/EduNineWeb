@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NINE Nursing Coaching</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: #f4b400;
+            /* like Apna College yellow */
+            --dark-color: #1e1e1e;
+            --text-color: #333;
+            --bg-color: #fff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: var(--text-color);
+        }
+
+        .intro-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--bg-color);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px var(--shadow-color);
+        }
+
+        .intro-container h2 {
+            font-size: 32px;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .intro-container h3 {
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .intro-container p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .intro-container ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .intro-container ul li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .intro-container {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .intro-container h2 {
+                font-size: 26px;
+            }
+
+            .intro-container h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="./images/channels4_profile-removebg-preview.png" width="80" height="20" alt="EduWeb logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/channels4_profile-removebg-preview.png" width="162" height="50"
+                            alt="EduWeb logo">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="aboutMe.html" class="navbar-link" data-nav-link>About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="readMore.html" class="navbar-link" data-nav-link>Courses</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="header-action-btn" aria-label="toggle search" title="Search">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+
+
+                <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+                    <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <section class="intro-container">
+        <h2>Welcome to NINE</h2>
+        <h3>(Nightingale Institute for Nursing Education), Betul</h3>
+
+        <p>
+            NINE is a trusted coaching institute committed to guiding aspiring nursing professionals towards success.
+        </p>
+
+        <p>We offer expert preparation for various nursing competitive exams, including:</p>
+
+        <ul>
+            <li>NORCET</li>
+            <li>RRB</li>
+            <li>GMCH</li>
+            <li>CHO</li>
+            <li>NHM</li>
+            <li>VYAPAM</li>
+            <li>Group-5</li>
+            <li>SGPGI</li>
+            <li>Army Nursing Officer</li>
+        </ul>
+
+        <p>
+            With a team of experienced educators, structured study plans, and a focus on results, we help students
+            confidently crack
+            <span class="highlight">all types of nursing exams</span> — both state-level and national-level.
+        </p>
+
+        <p class="highlight">Join NINE – Where your nursing career begins.</p>
+    </section>
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
