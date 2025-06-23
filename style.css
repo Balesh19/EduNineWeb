@@ -300,6 +300,7 @@ body {
   padding-block: 5px;
   box-shadow: var(--shadow-1);
   z-index: 2;
+  border-radius: 120px;
 }
 
 .header.active { position: fixed; }
