@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    :root {
+      --primary: #2e86de;
+      --dark: #1e272e;
+      --light: #f1f2f6;
+      --bg: #ffffff;
+      --radius: 8px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      padding: 20px;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      background-color: var(--bg);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .contact-info {
+      background-color: var(--primary);
+      color: white;
+      padding: 40px;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .contact-info p span {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .contact-form {
+      padding: 40px;
+      background-color: #fff;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: var(--radius);
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-group button {
+      padding: 12px 20px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .form-group button:hover {
+      background-color: #1b4f72;
+    }
+
+    @media (max-width: 768px) {
+      .contact-info, .contact-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><span>Address:</span> 123 Edu Street, Learning City, IN 46001</p>
+      <p><span>Email:</span> support@example.com</p>
+      <p><span>Phone:</span> +91 9876543210</p>
+    </div>
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="#">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
